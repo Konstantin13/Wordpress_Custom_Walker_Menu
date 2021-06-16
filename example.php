@@ -8,7 +8,7 @@ include "ExampleWalkerMenu.php";
 wp_nav_menu([
 	"theme_location" => "example-menu",
 	"container" => "",
-  "menu_class" => "menu example-menu",
+  	"menu_class" => "menu example-menu",
 	"walker" => new ExampleWalkerMenu, //just use the new walker
 ]);
 
