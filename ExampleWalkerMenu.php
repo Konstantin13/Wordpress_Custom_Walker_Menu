@@ -50,7 +50,7 @@ class ExampleWalkerMenu extends CustomWalkerMenu{
     //after the a tag, if the li element has child elements, an svg icon will be inserted
 		function add_a_after($item, $depth, $args, $system_li_classes){
 				
-				if(in_array($system_li_classes))
+				if(in_array("menu-item-has-children",$system_li_classes))
 					return '
 						<span class="menu__arrow">
 						<svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
